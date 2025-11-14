@@ -1,0 +1,11 @@
+// Definição do cliente gerado
+generator client {
+  provider = "prisma-client" // Gera códigos em JS/TS
+  output   = "../src/generated/prisma"
+}
+
+// Fonte do banco de dados
+datasource db {
+  provider = "mysql" // Tipo
+  url      = env("DATABASE_URL") // String de conexão
+}
